@@ -22,16 +22,29 @@ source /Users/geoff/.dotfiles/.prompt
 
 ## Contents
 
+### alias
+
+Adds these alias commands:
+
+- `l`: `ls -la`
+- `..`: `cd ..`
+- `...`: `cd ../..`
+- `....`: `cd ../../..`
+
 ### env
 
 - Puts Homebrew-installed nvm in PATH
 - Puts rvm in PATH
 - Adds `~/bin` to PATH
 - Sets default editor to `pico`
+- Adds Yarn support
 
 ### input
 
 - Enables case-insensitive path matching
+- Prepend `cd` command to directories automatically
+- Correct spelling errors during tab completion
+- Correct spelling errors in arguments supplied to `cd`
 
 ### prompt
 
