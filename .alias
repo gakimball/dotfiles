@@ -1,0 +1,7 @@
+# List in long format, include dotfiles
+alias l="ls -la"
+
+# Aliases to back up directories quickly
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."

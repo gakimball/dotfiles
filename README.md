@@ -14,6 +14,7 @@ git clone https://github.com/gakimball/dotfiles .dotfiles
 Source files in `.bash_profile`:
 
 ```bash
+source /Users/geoff/.dotfiles/.alias
 source /Users/geoff/.dotfiles/.env
 source /Users/geoff/.dotfiles/.input
 source /Users/geoff/.dotfiles/.prompt
