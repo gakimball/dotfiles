@@ -1,6 +1,6 @@
 # dotfiles
 
-My dotfiles.
+My [dotfiles](https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789#.abz8qz21x). Some features require Bash 4.
 
 ## Installation
 
