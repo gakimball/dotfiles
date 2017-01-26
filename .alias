@@ -5,3 +5,10 @@ alias l="ls -la"
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
+
+# Launch Atom faster
+alias a="atom ."
+
+# Git shortcuts
+alias gs='git status'
+alias gp='git push'
