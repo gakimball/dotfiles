@@ -9,4 +9,4 @@ function parse_git_branch() {
 }
 
 # Prompt has the format `~/ master*`
-export PS1="\n\[\e[34m\]\w\[\e[m\] \[\e[36m\]\`parse_git_branch\`\[\e[m\] 🚀  "
+export PS1="\n\[\e[34m\]\w\[\e[m\] \[\e[36m\]\`parse_git_branch\`\[\e[m\] "
