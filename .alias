@@ -1,3 +1,7 @@
+function git_fetch_and_rebase() {
+  git fetch && git rebase origin/$1
+}
+
 # List in long format, include dotfiles
 alias l="ls -la"
 
@@ -10,5 +14,9 @@ alias ....="cd ../../.."
 alias a="atom ."
 
 # Git shortcuts
-alias gs='git status'
+alias gd='git diff'
+alias gf='git fetch'
+alias gfr=git_fetch_and_rebase
 alias gp='git push'
+alias gpl='git pull'
+alias gs='git status'
