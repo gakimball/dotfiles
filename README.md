@@ -30,6 +30,13 @@ Adds these alias commands:
 - `..`: `cd ..`
 - `...`: `cd ../..`
 - `....`: `cd ../../..`
+- `a`: `atom .`
+- `gd`: `git diff`
+- `gf`: `git fetch`
+- `gfr <branch>`: `git fetch rebase origin <branch>`
+- `gp`: `git push`
+- `gpl`: `git pull`
+- `gs`: `git status`
 
 ### env
 
