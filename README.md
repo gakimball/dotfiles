@@ -43,7 +43,7 @@ Adds these alias commands:
 - Puts Homebrew-installed nvm in PATH
 - Puts rvm in PATH
 - Adds `~/bin` to PATH
-- Sets default editor to `pico`
+- Sets default editor to `nano`
 - Adds Yarn support
 
 ### input
