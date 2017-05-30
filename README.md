@@ -1,4 +1,8 @@
-# dotfiles
+<h1 align="center">
+  <img width="543" src="https://raw.githubusercontent.com/gakimball/dotfiles/master/assets/screenshot.png" alt="">
+  <br>
+  dotfiles
+</h1>
 
 My [dotfiles](https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789#.abz8qz21x). Some features require Bash 4. Also includes my Homebrew bundle.
 
