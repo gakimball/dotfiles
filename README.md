@@ -84,7 +84,7 @@ Installs software using Homebrew, Homebrew Cask, and [`mas`](https://github.com/
 - **Communication:** Boxy, Slack, TweetBot, WhatsApp
 - **Design:** Adobe Creative Cloud, Pixelmator, Sketch
 - **Development:** Atom, Bash 4, Dash, ffmpeg, Heroku, Hyper, nano, nvm, Patterns, Paw, Postgres, Redis, Ruby, Transmit, VirtualBox, Xcode
-- **Media:** Dropbox, Spotify, VLC
+- **Media:** Dropbox, Kap, Spotify, VLC
 - **Stupid:** Cowsay, Fortune
 
 ## License
