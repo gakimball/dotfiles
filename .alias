@@ -13,6 +13,9 @@ alias ....="cd ../../.."
 # Launch Atom faster
 alias a="atom ."
 
+# Open folders faster
+alias o="open ."
+
 # Git shortcuts
 alias gd='git diff'
 alias gf='git fetch'
