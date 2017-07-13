@@ -44,7 +44,6 @@ source /Users/geoff/.dotfiles/.prompt
 
 Adds these alias commands:
 
-- `l`: `ls -la`
 - `..`: `cd ..`
 - `...`: `cd ../..`
 - `....`: `cd ../../..`
@@ -55,6 +54,8 @@ Adds these alias commands:
 - `gp`: `git push`
 - `gpl`: `git pull`
 - `gs`: `git status`
+- `l`: `ls -la`
+- `o`: `open .`
 
 ### env
 
