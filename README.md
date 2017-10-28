@@ -48,6 +48,7 @@ Adds these alias commands:
 - `...`: `cd ../..`
 - `....`: `cd ../../..`
 - `a`: `atom .`
+- `caf`: `caffeinate -dims`
 - `gd`: `git diff`
 - `gf`: `git fetch`
 - `gfr <branch>`: `git fetch rebase origin <branch>`

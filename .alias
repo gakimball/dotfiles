@@ -23,3 +23,6 @@ alias gfr=git_fetch_and_rebase
 alias gp='git push'
 alias gpl='git pull'
 alias gs='git status'
+
+# Keep the system totally awake
+alias caf='caffeinate -dims'
