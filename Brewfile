@@ -29,7 +29,6 @@ cask 'slack'
 cask 'spotify'
 cask 'virtualbox'
 cask 'vlc'
-cask 'whatsapp'
 mas 'Boxy', id: 1053031090
 mas 'Patterns', id: 429449079
 mas 'Pixelmator', id: 407963104
