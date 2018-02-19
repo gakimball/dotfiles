@@ -2,6 +2,12 @@ function git_fetch_and_rebase() {
   git fetch && git rebase origin/$1
 }
 
+function coffeethyme() {
+  parent_path=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
+  cat "${parent_path}/coffee.txt"
+  caffeinate -dims
+}
+
 # List in long format, include dotfiles
 alias l="ls -la"
 
@@ -25,4 +31,4 @@ alias gpl='git pull'
 alias gs='git status'
 
 # Keep the system totally awake
-alias caf='caffeinate -dims'
+alias caf=coffeethyme
