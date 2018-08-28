@@ -6,36 +6,13 @@
 
 My [dotfiles](https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789#.abz8qz21x). Some features require Bash 4. Also includes my Homebrew bundle.
 
-## Installation
-
-Install Homebrew and homebrew-bundle:
-
-```bash
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew tap homebrew-bundle
-```
-
-Download into home directory:
+## Setup
 
 ```bash
 cd ~
 git clone https://github.com/gakimball/dotfiles .dotfiles
-```
-
-Run Brewfile to install software:
-
-```bash
 cd .dotfiles
-brew bundle
-```
-
-Source files in `.bash_profile`:
-
-```bash
-source /Users/geoff/.dotfiles/.alias
-source /Users/geoff/.dotfiles/.env
-source /Users/geoff/.dotfiles/.input
-source /Users/geoff/.dotfiles/.prompt
+./setup.sh
 ```
 
 ## Contents
