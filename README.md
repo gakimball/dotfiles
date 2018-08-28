@@ -4,7 +4,7 @@
   dotfiles
 </h1>
 
-My [dotfiles](https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789#.abz8qz21x). Some features require Bash 4. Also includes my Homebrew bundle.
+My [dotfiles](https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789#.abz8qz21x). Some features require Bash 4. Also includes my Homebrew bundle and `.gitconfig`.
 
 ## Setup
 
@@ -14,6 +14,13 @@ git clone https://github.com/gakimball/dotfiles .dotfiles
 cd .dotfiles
 ./setup.sh
 ```
+
+The setup script will:
+
+- Install Homebrew
+- Install Homebrew libraries and casks, and Mac App Store apps
+- Create a `.bash_profile`
+- Create a `.gitconfig`
 
 ## Contents
 
@@ -42,6 +49,7 @@ Adds these alias commands:
 - Adds `~/bin` to PATH
 - Sets default editor to `nano`
 - Adds Yarn support
+- Sets up GnuPG TTY
 
 ### input
 
@@ -61,9 +69,19 @@ Installs software using Homebrew, Homebrew Cask, and [`mas`](https://github.com/
 - **Browsers:** Firefox, Google Chrome
 - **Communication:** Boxy, Slack, TweetBot
 - **Design:** Adobe Creative Cloud, Pixelmator, Sketch
-- **Development:** Atom, Bash 4, Dash, diff-so-fancy, ffmpeg, Heroku, Hyper, nano, nvm, Patterns, Paw, Postgres, Redis, Ruby, Transmit, VirtualBox, Xcode
+- **Development:** Atom, Bash 4, Dash, diff-so-fancy, ffmpeg, GnuPG, Heroku, Hyper, nano, nvm, Patterns, Paw, Postgres, Redis, Ruby, Transmit, VirtualBox, Xcode
 - **Media:** Dropbox, Kap, The Unarchiver, Spotify, VLC
 - **Stupid:** Cowsay, Fortune
+
+### .gitconfig
+
+The Git config includes my identity and some helpful defaults:
+
+- Use diff-so-fancy for diffs
+- Use a compact log format
+- Require commits to be GPG signed
+- Use "simple" push method
+- Add Git LFS support
 
 ## License
 

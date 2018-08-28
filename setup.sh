@@ -1,7 +1,7 @@
 echo "Step 1/4: Installing Homebrew"
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-echo "Step 2/4: Downloading Homebrew casks"
+echo "Step 2/4: Downloading Homebrew libraries"
 brew tap homebrew-bundle
 brew bundle
 
