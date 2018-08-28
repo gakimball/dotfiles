@@ -30,7 +30,7 @@ cask 'spotify'
 cask 'virtualbox'
 cask 'vlc'
 mas 'Boxy', id: 1053031090
-mas 'Contract', id: 1254981365
+mas 'Contrast', id: 1254981365
 mas 'Patterns', id: 429449079
 mas 'Pixelmator', id: 407963104
 mas 'The Unarchiver', id: 425424353
