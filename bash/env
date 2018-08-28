@@ -17,3 +17,6 @@ export PATH="$HOME/.fastlane/bin:$PATH"
 
 # Environment variables
 export EDITOR="nano"
+
+# Allow GPG to function properly
+export GPG_TTY=$(tty)

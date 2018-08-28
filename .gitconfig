@@ -1,0 +1,40 @@
+[user]
+	# It me
+	name = Geoff Kimball
+	email = geoff@geoffkimball.com
+
+[core]
+	# Use https://github.com/so-fancy/diff-so-fancy for diffs
+	pager = diff-so-fancy | less --tabs=4 -RFX
+
+[alias]
+	# Remove local branches that have been deleted on remote
+	prune = fetch --prune
+
+	# Undo the last commit
+	undo = reset --soft HEAD^
+
+	# Stash, but include untracked files
+	stash-all = stash save --include-untracked
+
+[commit]
+  # Auto-sign commits with GPG
+  gpgSign = true
+
+[push]
+  # Push to the remote branch with the same name as the current local one
+	default = simple
+
+	# Automatically include tags when pushing
+	followTags = true
+
+[format]
+	# More streamlined formatting for logs
+	pretty = format:%C(blue)%cD %C(cyan)%an%n  %C(dim)%h: %C(reset)%s%n
+
+[filter "lfs"]
+	# Git Large File Storage
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
