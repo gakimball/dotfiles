@@ -67,7 +67,7 @@ Adds these alias commands:
 Installs software using Homebrew, Homebrew Cask, and [`mas`](https://github.com/mas-cli/mas).
 
 - **Browsers:** Firefox, Google Chrome
-- **Communication:** Boxy, Slack, TweetBot
+- **Communication:** Airmail, Slack, TweetBot
 - **Design:** Adobe Creative Cloud, Pixelmator, Sketch
 - **Development:** Atom, Bash 4, Dash, diff-so-fancy, ffmpeg, GnuPG, Heroku, ImageOptim nano, nvm, Patterns, Paw, Postgres, Redis, Ruby, Transmit, VirtualBox, Xcode
 - **Media:** Dropbox, Kap, The Unarchiver, Spotify, VLC

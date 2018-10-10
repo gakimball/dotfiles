@@ -30,7 +30,7 @@ cask 'slack'
 cask 'spotify'
 cask 'virtualbox'
 cask 'vlc'
-mas 'Boxy', id: 1053031090
+mas 'Airmail 3', id: 918858936
 mas 'Contrast', id: 1254981365
 mas 'Patterns', id: 429449079
 mas 'Pixelmator', id: 407963104
