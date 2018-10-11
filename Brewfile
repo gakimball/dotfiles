@@ -36,5 +36,5 @@ mas 'Patterns', id: 429449079
 mas 'Pixelmator', id: 407963104
 mas 'The Unarchiver', id: 425424353
 mas 'Transmit', id: 403388562
-mas 'Tweetbot', id: 557168941
+mas 'Tweetbot', id: 1384080005
 mas 'Xcode', id: 497799835
