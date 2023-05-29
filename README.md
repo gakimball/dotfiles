@@ -67,12 +67,12 @@ Adds these alias commands:
 Installs software using Homebrew, Homebrew Cask, and [`mas`](https://github.com/mas-cli/mas).
 
 - **Browsers:** Firefox, Google Chrome
-- **Communication:** Airmail, Slack, TweetBot
-- **Design:** Adobe Creative Cloud, Pixelmator, Sketch
-- **Development:** Atom, Bash 4, Dash, diff-so-fancy, ffmpeg, GnuPG, 
-Heroku, ImageOptim, nano, nvm, Patterns, Paw, Postgres, Redis, Ruby, Transmit, VirtualBox, Xcode
-- **Media:** Dropbox, Kap, The Unarchiver, Spotify, VLC
-- **Stupid:** Cowsay, Fortune
+- **Communication:** Slack
+- **Design:** Pixelmator, Sketch
+- **Development (GUI):** Insomnia, Patterns, Transmit, VirtualBox, Xcode
+- **Development (CLI):** Bash 4, diff-so-fancy, ffmpeg, GnuPG, micro, nano, nvm
+- **Media:** ImageOptim, Kap, The Unarchiver, Spotify, VLC
+- **Bonus:** Cowsay, Fortune
 
 ### .gitconfig
 
