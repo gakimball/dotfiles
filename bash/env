@@ -24,3 +24,6 @@ export EDITOR="nano"
 
 # Allow GPG to function properly
 export GPG_TTY=$(tty)
+
+# Add Composer
+export PATH=~/.composer/vendor/bin:$PATH
