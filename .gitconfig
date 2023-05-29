@@ -1,21 +1,38 @@
 [user]
-	# It me
-	name = Geoff Kimball
-	email = geoff@geoffkimball.com
+  # It me
+  name = Geoff Kimball
+  email = geoff@geoffkimball.com
 
 [core]
-	# Use https://github.com/so-fancy/diff-so-fancy for diffs
-	pager = diff-so-fancy | less --tabs=4 -RFX
+  # Use https://github.com/so-fancy/diff-so-fancy for diffs
+  pager = diff-so-fancy | less --tabs=4 -RFX
+
+  excludesFile = '~/.gitignore'
 
 [alias]
-	# Remove local branches that have been deleted on remote
-	prune = fetch --prune
+  # Remove local branches that have been deleted on remote
+  prune = fetch --prune
 
-	# Undo the last commit
-	undo = reset --soft HEAD^
+  # Undo the last commit
+  undo = reset --soft HEAD^
 
-	# Stash, but include untracked files
-	stash-all = stash save --include-untracked
+  # Stash, but include untracked files
+  stash-all = stash save --include-untracked
+
+  # Print the most recent commit
+  last = log -1
+
+  # Amend an old commit with changes
+  # via: https://www.colinodell.com/blog/201803/four-useful-git-aliases
+  fixup = !sh -c 'REV=$(git rev-parse $1) && git commit --fixup $@ && git rebase -i --autostash --autosquash $REV^' -
+
+  # Get the URL of the commit at HEAD
+  # Note: requires the GitHub CLI to be installed
+  # via: https://stackoverflow.com/a/70837590
+  url = !sh -c echo "$(gh repo view --json url  --jq .url)/commit/$(git rev-parse HEAD)"
+
+[init]
+  defaultBranch = main
 
 [commit]
   # Auto-sign commits with GPG
@@ -23,18 +40,25 @@
 
 [push]
   # Push to the remote branch with the same name as the current local one
-	default = simple
+  default = simple
 
-	# Automatically include tags when pushing
-	followTags = true
+  # Automatically include tags when pushing
+  followTags = true
 
 [format]
-	# More streamlined formatting for logs
-	pretty = format:%C(blue)%cD %C(cyan)%an%n  %C(dim)%h: %C(reset)%s%n
+  # More streamlined formatting for logs
+  # %C(color) = color change
+  # %cD = timestamp
+  # %an = author
+  # %D  = refs
+  # %n  = newline
+  # %h  = short sha
+  # %s  = message
+  pretty = format:%C(blue)%cD %C(cyan)%an%C(yellow)% D%n  %C(dim)%h: %C(reset)%s%n
 
 [filter "lfs"]
-	# Git Large File Storage
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
-	clean = git-lfs clean -- %f
+  # Git Large File Storage
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+  clean = git-lfs clean -- %f
