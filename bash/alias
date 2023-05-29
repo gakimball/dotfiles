@@ -8,6 +8,12 @@ function coffeethyme() {
   caffeinate -dims
 }
 
+# Get the URL of the Git commit at HEAD
+# via: https://stackoverflow.com/a/70837590
+function git_commit_url() {
+  echo "$(gh repo view --json url  --jq .url)/commit/$(git rev-parse HEAD)"
+}
+
 # List in long format, include dotfiles
 alias l="ls -la"
 
@@ -32,3 +38,13 @@ alias gs='git status'
 
 # Keep the system totally awake
 alias caf=coffeethyme
+
+# Git: prune squashed branches
+alias git-prune-squashed='git checkout -q master && git for-each-ref refs/heads/ "--format=%(refname:short)" | while read branch; do mergeBase=$(git merge-base master $branch) && [[ $(git cherry master $(git commit-tree $(git rev-parse $branch^{tree}) -p $mergeBase -m _)) == "-"* ]] && git branch -D $branch; done'
+
+# Shortcut to Tailscale CLI
+alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
+
+alias love="/Applications/love.app/Contents/MacOS/love"
+
+alias giturl=git_commit_url
