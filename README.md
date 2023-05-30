@@ -1,66 +1,60 @@
-<h1 align="center">
-  <img width="543" src="https://raw.githubusercontent.com/gakimball/dotfiles/master/assets/screenshot.png" alt="">
-  <br>
-  dotfiles
-</h1>
+My macOS [dotfiles](https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789#.abz8qz21x), which includes:
 
-My [dotfiles](https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789#.abz8qz21x). Some features require Bash 4. Also includes my Homebrew bundle and `.gitconfig`.
+- zsh config
+- Brewfile
+- Git config
+
+## Requirements
+
+The shell config is for zsh, which is the default shell in newer versions of macOS. Also required:
+
+- [Homebrew](https://brew.sh/)
+- [Oh My Zsh](https://ohmyz.sh/)
 
 ## Setup
+
+Clone the dotfiles into your home folder:
 
 ```bash
 cd ~
 git clone https://github.com/gakimball/dotfiles .dotfiles
-cd .dotfiles
-./setup.sh
 ```
 
-The setup script will:
+Install Homebrew dependencies:
 
-- Install Homebrew
-- Install Homebrew libraries and casks, and Mac App Store apps
-- Create a `.bash_profile`
-- Create a `.gitconfig`
+```bash
+cd .dotfiles
+brew tap homebrew-bundle
+brew bundle
+```
+
+Symlink the config files:
+
+```bash
+ln -sv ~/.dotfiles/.gitconfig ~/.gitconfig
+ln -sv ~/.dotfiles/.zshrc ~/.zshrc
+```
+
+Reload your shell:
+
+```bash
+omz reload
+```
 
 ## Contents
 
-### alias
+### zshrc
 
-Adds these alias commands:
+Extra configuration:
 
-- `..`: `cd ..`
-- `...`: `cd ../..`
-- `....`: `cd ../../..`
-- `a`: `atom .`
-- `caf`: `caffeinate -dims`
-- `gd`: `git diff`
-- `gf`: `git fetch`
-- `gfr <branch>`: `git fetch rebase origin <branch>`
-- `gp`: `git push`
-- `gpl`: `git pull`
-- `gs`: `git status`
-- `l`: `ls -la`
-- `o`: `open .`
+- Spellcheck for commands and flags
+- Default editor is `nano`
+- Enable tty input for GnuPG
 
-### env
+Extra aliases:
 
-- Puts Homebrew-installed nvm in PATH
-- Puts rvm in PATH
-- Adds `~/bin` to PATH
-- Sets default editor to `nano`
-- Adds Yarn support
-- Sets up GnuPG TTY
-
-### input
-
-- Enables case-insensitive path matching
-- Prepend `cd` command to directories automatically
-- Correct spelling errors during tab completion
-- Correct spelling errors in arguments supplied to `cd`
-
-### prompt
-
-- Enables fancy prompt with Git status
+- `o`: open the current working directory in Finder
+- `zshconfig`: edit zsh config
 
 ### Brewfile
 
@@ -70,7 +64,7 @@ Installs software using Homebrew, Homebrew Cask, and [`mas`](https://github.com/
 - **Communication:** Slack
 - **Design:** Pixelmator, Sketch
 - **Development (GUI):** Insomnia, Patterns, Transmit, VirtualBox, Xcode
-- **Development (CLI):** Bash 4, diff-so-fancy, ffmpeg, GnuPG, micro, nano, nvm
+- **Development (CLI):** diff-so-fancy, ffmpeg, GnuPG, micro, nano, nvm
 - **Media:** ImageOptim, Kap, The Unarchiver, Spotify, VLC
 - **Bonus:** Cowsay, Fortune
 

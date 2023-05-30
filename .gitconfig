@@ -7,7 +7,7 @@
   # Use https://github.com/so-fancy/diff-so-fancy for diffs
   pager = diff-so-fancy | less --tabs=4 -RFX
 
-  excludesFile = '~/.gitignore'
+  excludesFile = '~/.dotfiles/.gitignore'
 
 [alias]
   # Remove local branches that have been deleted on remote
