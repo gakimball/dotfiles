@@ -67,7 +67,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(coffee-time git macos-theme nvm zsh-lux)
+plugins=(brew coffee-time git macos-theme nvm zsh-lux)
 
 source $ZSH/oh-my-zsh.sh
 

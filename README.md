@@ -10,6 +10,7 @@ The shell config is for zsh, which is the default shell in newer versions of mac
 
 - [Homebrew](https://brew.sh/)
 - [Oh My Zsh](https://ohmyz.sh/)
+- [nvm](https://github.com/nvm-sh/nvm)
 
 ## Setup
 
@@ -64,7 +65,7 @@ Installs software using Homebrew, Homebrew Cask, and [`mas`](https://github.com/
 - **Communication:** Slack
 - **Design:** Pixelmator, Sketch
 - **Development (GUI):** Insomnia, Patterns, Transmit, VirtualBox, Xcode
-- **Development (CLI):** diff-so-fancy, ffmpeg, GnuPG, micro, nano, nvm
+- **Development (CLI):** diff-so-fancy, ffmpeg, GnuPG, micro, nano
 - **Media:** ImageOptim, Kap, The Unarchiver, Spotify, VLC
 - **Bonus:** Cowsay, Fortune
 
