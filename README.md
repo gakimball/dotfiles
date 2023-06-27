@@ -16,29 +16,35 @@ The shell config is for zsh, which is the default shell in newer versions of mac
 
 Clone the dotfiles into your home folder:
 
-```bash
+```zsh
 cd ~
 git clone https://github.com/gakimball/dotfiles .dotfiles
 ```
 
 Install Homebrew dependencies:
 
-```bash
+```zsh
 cd .dotfiles
 brew tap homebrew-bundle
 brew bundle
 ```
 
+Download zsh plugins:
+
+```zsh
+source ./sync-plugins.zsh
+```
+
 Symlink the config files:
 
-```bash
+```zsh
 ln -sv ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -sv ~/.dotfiles/.zshrc ~/.zshrc
 ```
 
 Reload your shell:
 
-```bash
+```zsh
 omz reload
 ```
 
